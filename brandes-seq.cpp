@@ -70,7 +70,6 @@ int main(int argc, char* argv[]) {
 	fileOut.open(argv[2]);
 	if (fileIn.is_open() && fileOut.is_open()) {
 		while (fileIn >> from >> to) {
-			cout<<from<<" "<<to<<endl;
 			allVertices.insert(from);
 			allVertices.insert(to);
 			inVertices.insert(from);
