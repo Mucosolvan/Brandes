@@ -1,10 +1,8 @@
-cmake_minimum_required (VERSION 3.1)
-project (MIMUW-CPCPP-lab1 C CXX)
+cmake_minimum_required (VERSION 3.2)
+project (Brandes C CXX)
 
 find_package ( Threads REQUIRED )
 
-#SET(CMAKE_C_COMPILER /usr/bin/gcc-4.9)
-#SET(CMAKE_CXX_COMPILER /usr/bin/g++-4.9)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "-g -O3 -Wall")
 
@@ -19,6 +17,5 @@ endmacro()
 
 add_executable(brandes-par brandes-par.cpp)
 add_executable(brandes-seq brandes-seq.cpp)
-add_executable(brandes-par2 brandes-par2.cpp)
 
 install(TARGETS DESTINATION .)
